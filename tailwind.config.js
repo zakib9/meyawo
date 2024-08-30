@@ -2,11 +2,19 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "primary": "#695aa6",
+        "secondary": "#e2e6ea",
+      },
+      fontFamily: {
+        Karla: ["Karla", "sans-serif"],
+
+      }
+    },
   },
   plugins: [],
 }
-
