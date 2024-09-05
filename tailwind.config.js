@@ -9,6 +9,8 @@ export default {
       colors:{
         "primary": "#695aa6",
         "secondary": "#e2e6ea",
+        "accent": "#A59CCA",
+        "hoverd": "#574b8e"
       },
       fontFamily: {
         Karla: ["Karla", "sans-serif"],
