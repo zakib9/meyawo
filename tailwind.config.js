@@ -15,8 +15,13 @@ export default {
       fontFamily: {
         Karla: ["Karla", "sans-serif"],
 
-      }
+      },
+
+      
     },
+  },
+  variants: {
+    fill: ['hover', 'focus'], // this line does the trick
   },
   plugins: [],
 }
