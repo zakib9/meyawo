@@ -4,11 +4,11 @@
 </script>
 
 <template>
-  <div class="h-screen items-center flex flex-col mt-[-350px] bg-gradient-to-b from-primary via-secondary to-transparent " >
+  <div id="#" class="h-screen items-center flex flex-col mt-[-350px] bg-gradient-to-b from-primary via-secondary to-transparent " >
 
     <!-- Header -->
-    <div class="flex flex-col gap-8 text-start flex-wrap max-w-fit mt-[500px] font-Karla font-bold text-8xl text-gray-700" v-scroll="onScroll">
-      <h1 class=" text-gray-500">HI!</h1>
+    <div id="home" class="flex flex-col gap-8 text-start flex-wrap max-w-fit  font-Karla font-bold text-8xl text-gray-700" v-scroll="onScroll">
+      <h1 class="mt-[500px] text-gray-500">HI!</h1>
       <h1>I am Zaki</h1>
       <h1>Bousmaha</h1>
       <div class="flex flex-col gap-2 text-4xl font-Karla font-extralight uppercase text-gray-500">
@@ -18,24 +18,25 @@
       <div class="flex flex-wrap max-w-fit bg-primary text-white rounded-full text-base font-light px-4 py-2 justify-center">Visit My Works</div>
     </div>
     <!--       Hwo am i        -->
-    <div class="flex w-3/5 items-center mt-80 mb-40 ">
-      <img src="../assets/images/man.png" alt="">
-
+    <section id="about" class=" w-3/5">
+      <div  class="flex items-center mt-80 mb-40 ">
+        <img src="../assets/images/man.png" alt="">
       
-      <div class=" flex flex-col gap-4 text-lg font-thin font-Karla text-gray-500">
-        <p>Who Am I ?</p>
-        <h3 class=" text-primary font-extrabold text-4xl mb-4">About Me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste
-          culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!</p>
-          <div class=" text-primary bg-transparent border-solid border-primary rounded-full border text-center max-w-fit p-2 px-4 hover:bg-primary hover:text-secondary">Download CV</div>
+        <div class=" flex flex-col gap-4 text-lg font-thin font-Karla text-gray-500">
+          <p>Who Am I ?</p>
+          <h3 class=" text-primary font-extrabold text-4xl mb-4">About Me</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste
+            culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!</p>
+            <div class=" text-primary bg-transparent border-solid border-primary rounded-full border text-center max-w-fit p-2 px-4 hover:bg-primary hover:text-white">Download CV</div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!--       What i do        -->
-    <div class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
+    <div  class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
       <p>What I Do ?</p>
       <h3 class=" text-primary font-extrabold text-4xl">Service</h3>
-      <div class="grid grid-cols-4 gap-6 mb-40 mt-10">
+      <div class="grid grid-cols-4 gap-6  mt-10">
         
         <div class=" max-h-80 max-w-80 flex flex-col gap-6 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
         group overflow-hidden">
@@ -66,36 +67,38 @@
     </div>
 
     <!--       what i did        -->
-    <div class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500  ">
-      <p>What I Did ?</p>
-      <h3 class=" text-primary font-extrabold text-4xl mb-20">Portfolio</h3>
-      <div class="grid grid-cols-3 gap-6 mb-80 min-h-96">
-        
-        <div class=" min-w-96 rounded-sm text-primary font-extrabold text-2xl 
-        group overflow-hidden" style="background-image: url('src/assets/images/folio-1.jpg');">         
-          <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
-            <h4 class="">Web Designing</h4>
-            <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
-          </div>
-          </div>
-          <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl 
-        group overflow-hidden" style="background-image: url('src/assets/images/folio-2.jpg');">         
-          <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
-            <h4 class="">Web Designing</h4>
-            <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
-          </div>
-          </div>
-          <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl 
-        group overflow-hidden" style="background-image: url('src/assets/images/folio-3.jpg');">         
-          <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
-            <h4 class="">Web Designing</h4>
-            <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
-          </div>
-          </div>
-          
-              
+    <section id="portfolio">
+      <div  class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500  ">
+        <p class=" mt-40">What I Did ?</p>
+        <h3 class=" text-primary font-extrabold text-4xl mb-20">Portfolio</h3>
+        <div class="grid grid-cols-3 gap-6 mb-80 min-h-96">
+      
+          <div class=" min-w-96 rounded-sm text-primary font-extrabold text-2xl
+          group overflow-hidden" style="background-image: url('src/assets/images/folio-1.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+              <h4 class="">Web Designing</h4>
+              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+            </div>
+            </div>
+            <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl
+          group overflow-hidden" style="background-image: url('src/assets/images/folio-2.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+              <h4 class="">Web Designing</h4>
+              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+            </div>
+            </div>
+            <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl
+          group overflow-hidden" style="background-image: url('src/assets/images/folio-3.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+              <h4 class="">Web Designing</h4>
+              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+            </div>
+            </div>
+      
+      
+        </div>
       </div>
-    </div>
+    </section>
 
 
     <!--       How Much I Charge ?        -->
@@ -118,7 +121,7 @@
             <h4 class=" font-extralight text-2xl text-red-400">X</h4>
             <h4 class=" font-extralight text-2xl text-red-400">X</h4>
             <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>0.00/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight">Subscribe</div>
+            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
           </div>
           <div class=" min-w-96 text-primary font-extrabold text-4xl 
@@ -135,7 +138,7 @@
             </div>
             <h4 class=" font-extralight text-2xl text-red-400">X</h4>
             <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>9.99/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight">Subscribe</div>
+            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
           </div>
           <div class=" min-w-96 text-primary font-extrabold text-4xl 
@@ -152,26 +155,26 @@
               <p>inventore omnis</p>
             </div>
             <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>99.9/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight">Subscribe</div>
+            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
           </div>  
       </div>
     </div>
 
     <!--      Want to work with me?        -->
-    <div class=" flex justify-evenly items-center w-full bg-primary text-white py-20 mb-40">
+    <div class=" flex justify-evenly items-center w-full bg-primary text-white py-20">
       <div class="flex flex-col gap-2">
         <h4 class=" text-3xl font-bold font-Karla">Want to work with me?</h4>
         <p class=" text-xl font-extralight">Always feel Free to Contact & Hire me</p>
       </div>
-      <div class=" bg-secondary text-black font-Karla rounded-sm px-4 p-2 font-bold text-xl">Hire Me</div>
+      <div class=" bg-white cursor-pointer text-black font-Karla rounded-sm px-4 p-2 font-bold text-xl hover:bg-gray-100">Hire Me</div>
     </div>
 
      <!--       What Think Client About Me ?        -->
-     <div class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
-      <p>What Think Client About Me ?</p>
+     <div id="testomanial" class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
+      <p class=" mt-40">What Think Client About Me ?</p>
       <h3 class=" text-primary font-extrabold text-4xl">Testmonial</h3>
-      <div class="grid grid-cols-2 mx-80 gap-20 mb-40 mt-10">
+      <div class="grid grid-cols-2 mx-80 gap-20  mt-10">
         
         <div class=" max-h-60  flex gap-6 py-6 items-center rounded-sm border  p-2 text-primary font-extrabold text-xl 
         ">
@@ -197,8 +200,8 @@
     </div>
 
     <!--       Recent Posts?       -->
-    <div class="flex flex-col gap-4 items-center font-extralight font-Karla text-gray-700 ">
-      <p>Recent Posts?</p>
+    <div id="blog" class="flex flex-col gap-4 items-center font-extralight font-Karla text-gray-700 ">
+      <p class="mt-40">Recent Posts?</p>
       <h3 class=" text-primary font-extrabold text-4xl">Blog</h3>
       <div class="grid grid-rows-2 mx-96 gap-20 mb-40 mt-10">
         
@@ -273,7 +276,7 @@
       </div>
     </div>
     <!--       How can you communicat       -->
-    <div class="flex flex-col gap-4 items-center font-Karla font-extralight text-gray-700 w-1/2 mx-auto ">
+    <div id="contact" class="flex flex-col gap-4 items-center font-Karla font-extralight text-gray-700 w-1/2 mx-auto ">
       <div class="flex flex-col gap-1 items-center mb-10">
         <p>How can you communicat?</p>
         <h4 class="text-primary font-extrabold text-4xl">Contact Me</h4>
@@ -283,7 +286,7 @@
         <input type="email" placeholder="Enter Email" class=" rounded border border-solid border-gray-400 bg-transparent w-1/2 p-2 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
       </div>
       <textarea name="message" placeholder="Write Somthing" class="rounded border border-solid border-gray-400 bg-transparent w-full p-2 h-40 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
-      <div class="border border-solid border-primary text-primary font-extralight rounded bg-transparent hover:bg-primary hover:text-secondary p-2 mt-5 mb-32">Send Message</div>
+      <div class="border border-solid border-primary text-primary font-extralight rounded bg-transparent hover:bg-primary hover:text-white p-2 mt-5 mb-32 cursor-pointer">Send Message</div>
 
     </div>
 
