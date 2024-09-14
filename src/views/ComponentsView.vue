@@ -6,14 +6,15 @@ const calenderDropdown = ref(false)
 const dropdownButton = ref(false)
 const splitDropdown = ref(false)
 const formDropdown = ref(false)
+
 const colorList = ref([
-  {name: "primary" ,color: "bg-purple-100"},
-  {name: "secondary" ,color: "bg-secondary"},
-  {name: "seccess" ,color: "bg-green-100"},
-  {name: "info" ,color: "bg-teal-100"},
-  {name: "warning" ,color: "bg-orange-100"},
-  {name: "danger" ,color: "bg-pink-100"},
-  {name: "dark" ,color: "bg-gray-200"},])
+  {name: "Primary" , textColor: "text-purple-500",color: "bg-purple-700", active: false},
+  {name: "Secondary" , textColor: "text-violet-500",color: "bg-violet-700", active: false},
+  {name: "Seccess" , textColor: "text-green-500",color: "bg-green-500", active: false},
+  {name: "Info" , textColor: "text-teal-500",color: "bg-teal-600", active: false},
+  {name: "Warning" , textColor: "text-orange-500",color: "bg-orange-400", active: false},
+  {name: "Danger", textColor: "text-pink-500" ,color: "bg-pink-600", active: false},
+  {name: "Dark", textColor: "text-gray-500" ,color: "bg-gray-950", active: false},])
 const example = defineModel()
 example.value = "Example select"
 
@@ -53,14 +54,14 @@ function dismissing(name){
       <p>Components</p>
     </div>
   </div>
-  <div class=" flex flex-col gap-4 mx-96 text-primary mt-10 font-Karla">
+  <div class=" flex flex-col gap-4 w-4/5 items-start m-auto text-primary mt-10 font-Karla">
     <!--  Buttons  -->
     <h4 class=" text-3xl font-extrabold">Buttons</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
     <!--  Styles  -->
     <div class="flex flex-col gap-2 mb-8">
       <p class=" font-extrabold">Styles:</p>
-      <div class="flex gap-1">
+      <div class="flex flex-wrap gap-1">
         <button class=" py-2 px-3 text-white text-lg font-light bg-primary hover:bg-hoverd">Default</button>
         <button class=" py-2 px-3 text-primary text-lg font-light bg-white border border-primary hover:bg-primary hover:text-white">outline</button>
         <button class=" py-2 px-3 text-white text-lg font-light rounded bg-primary hover:bg-hoverd">Rounded</button>
@@ -76,7 +77,7 @@ function dismissing(name){
     <!--  Sizes  -->
     <div class="flex flex-col gap-2 mb-8">
       <p class=" font-extrabold">Sizes:</p>
-      <div class="flex gap-1 justify-start items-center">
+      <div class="flex flex-wrap gap-1 justify-start items-center">
         <button class=" py-4 px-6 text-white text-xl font-light bg-primary rounded hover:bg-hoverd">Large</button>
         <button class=" py-2 px-3 text-white text-lg font-light  bg-primary hover:bg-hoverd">Regular</button>
         <button class=" py-1 px-2 text-white text-base font-light  bg-primary hover:bg-hoverd">Small</button>
@@ -85,7 +86,7 @@ function dismissing(name){
     <!--  Colors  -->
     <div class="flex flex-col gap-2 mb-8">
       <p class=" font-extrabold">Colors:</p>
-      <div class="flex gap-1 justify-start items-center">
+      <div class="flex flex-wrap gap-1 justify-start items-center">
         <button class=" py-2 px-3 text-white text-lg font-light  bg-primary hover:bg-hoverd">Primary</button>
         <button class=" py-2 px-3 text-white text-lg font-light bg-gray-800 hover:bg-gray-950">Secondary</button>
         <button class=" py-2 px-3 text-white text-lg font-light bg-green-500 hover:bg-green-600">Success</button>
@@ -100,7 +101,7 @@ function dismissing(name){
     <!--  Buttons Tags  -->
     <div class="flex flex-col gap-2 mb-8">
       <p class=" font-extrabold">Buttons Tags:</p>
-      <div class="flex gap-1 justify-start items-center">
+      <div class="flex flex-wrap gap-1 justify-start items-center">
         <button class=" py-2 px-3 text-white text-lg font-light  bg-primary hover:bg-hoverd">Button</button>
         <button class=" py-2 px-3 text-white text-lg font-light  bg-primary hover:bg-hoverd">Input</button>
         <button class=" py-2 px-3 text-white text-lg font-light  bg-primary hover:bg-hoverd">Submit</button>
@@ -111,8 +112,8 @@ function dismissing(name){
     </div>
     <!--  Inputs  -->
     <h4 class=" text-3xl font-extrabold mt-5">Inputs</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
-    <div class="flex gap-6 w-full">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
+    <div class="flex flex-col md:flex-row gap-6 w-full">
       <div class="flex flex-col gap-4 basis-1/2">
         <p class=" font-extrabold">Form controls:</p>
         <input type="email" placeholder="Email address" class=" rounded border border-solid border-gray-400 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1 p-2">
@@ -509,8 +510,8 @@ function dismissing(name){
 
     <!--  Dropdowns  -->
     <h4 class=" text-3xl font-extrabold mt-5">Dropdowns</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
-    <div class=" flex gap-2">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
+    <div class=" flex flex-wrap gap-2">
       <!--  DropdownButton  -->
       <div class="flex flex-col gap-0">
   <button @click="showDropdownButton" class="text-gray-800 bg-white border border-gray-400 hover:bg-gray-800 hover:text-white px-5 py-2.5 text-center inline-flex items-center" type="button">Dropdown button <svg class="w-2.5 h-2.5 ms-3"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -596,133 +597,43 @@ function dismissing(name){
 
     <!--  Navigations  -->
     <h4 class=" text-3xl font-extrabold mt-5">Navigations</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
-    <div class="flex flex-col gap-2 text-xl  text-white font-extralight">
-      <div class=" flex justify-between bg-primary py-4 px-6 rounded items-center">
-        <h6 class="">Primary Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-gray-800 py-4 px-6 rounded items-center">
-        <h6 class="">Secondary Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-green-500  py-4 px-6 rounded items-center">
-        <h6 class="">Success Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-teal-500 py-4 px-6 rounded items-center">
-        <h6 class="">Info Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-orange-500 py-4 px-6 rounded items-center">
-        <h6 class="">Warning Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-rose-500  py-4 px-6 rounded items-center">
-        <h6 class="">Danger Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-gray-800 py-4 px-6 rounded items-center">
-        <h6 class="">Dark Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-200">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-200">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-200">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
-      <div class=" flex justify-between bg-gray-50 text-gray-800 shadow-sm py-4 px-6 rounded items-center">
-        <h6 class="">Dark Color</h6>
-        <div class="flex gap-8 text-base justify-evenly items-center">
-          <a href="#about">
-            <p class="hover:text-gray-400">About Us</p>
-          </a>
-          <a href="#service">
-            <p class="hover:text-gray-400">Our Service</p>
-          </a>
-          <a href="#team">
-            <p class="hover:text-gray-400">Our Team</p>
-          </a>
-          <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
-        </div>
-      </div>
+    <hr class=" h-px w-full bg-gray-600 mb-10">
+    
+    
+    <div v-for="color in colorList" :key="color.name" class="flex flex-col gap-2 w-full text-xl text-white font-extralight">
+        
+          
+           
+              <div
+              :class="[ `overflow-hidden transition-all duration-500 ease-in-out flex justify-between  rounded gap-4 py-5 lg:py-3 px-6  items-start ${color.color}`,
+              { ' max-h-96': color.active,
+                ' max-h-16': !color.active }]"
+              >
+                <div class="flex flex-col w-full lg:flex-row justify-between items-start lg:items-center gap-4">
+                  <h6 class="">{{color.name}} Color</h6>
+              
+                    <div class="flex flex-col lg:flex-row gap-4 text-base items-start lg:items-center justify-between">
+                      <a href="#about">
+                        <p class="hover:text-gray-200">About Us</p>
+                      </a>
+                      <a href="#service">
+                        <p class="hover:text-gray-200">Our Service</p>
+                      </a>
+                      <a href="#team">
+                        <p class="hover:text-gray-200">Our Team</p>
+                      </a>
+                      <a href="#book-table"><button class=" text-black text-base bg-white p-2 hover:bg-gray-200">navbar button</button></a>
+                    </div>
+                </div>
+                <svg @click="color.active = !color.active" :class="` h-6 lg:hidden fill-white opacity-80 hover:opacity-100 cursor-pointer`" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+              </div>
+          
+       
     </div>
 
      <!--  Paginations  -->
      <h4 class=" text-3xl font-extrabold mt-5">Pagination</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
     <div class=" flex flex-col gap-4">
       <div class=" flex gap-4 text-gray-800 text-lg items-center">
         <div class=" p-4 items-center hover:bg-secondary">
@@ -742,8 +653,8 @@ function dismissing(name){
     </div>
     <!--  Badges  -->
     <h4 class=" text-3xl font-extrabold mt-5">Badges</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
-    <div class=" flex gap-4 items-center text-base text-white font-extralight">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
+    <div class=" flex flex-wrap gap-4 items-center text-base text-white font-extralight">
       <div class=" bg-primary px-2 rounded-full">Primary</div>
       <div class=" bg-gray-800 px-2 rounded-full">Secondary</div>
       <div class=" bg-green-500 px-2 rounded-full">Success</div>
@@ -756,13 +667,13 @@ function dismissing(name){
 
     <!--  Alerts  -->
     <h4 class=" text-3xl font-extrabold mt-5">Alerts</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
     
     <transition-group leave-active-class="transition-all duration-300 opacity-0">
-      <div v-for="color in colorList" :key="color.name" class=" flex flex-col gap-4 items-center">
+      <div v-for="color in colorList" :key="color.name" class=" flex flex-col gap-4 items-center w-full">
       
-          <div  :class="`flex justify-between items-center p-4 text-gray-800 font-extralight text-lg w-full rounded-md ${color.color}     `">
-              <p>A simple {{color.name}} alert—check it out!</p>
+          <div  :class="`flex gap-4 justify-between items-center p-4 text-gray-800 font-extralight text-lg w-full rounded-md ${color.color} bg-opacity-20 `">
+              <p :class="` ${color.textColor} `">A simple {{color.name}} alert—check it out!</p>
               <svg class=" hover:fill-gray-800" @click="dismissing(color.name)" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512" fill="#79747f"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
           </div>
       </div>
@@ -771,9 +682,9 @@ function dismissing(name){
 
     <!--  Tables  -->
     <h4 class=" text-3xl font-extrabold mt-5">Tables</h4>
-    <hr class=" h-px bg-gray-600 mb-10">
+    <hr class=" h-px w-full bg-gray-600 mb-10">
     
-    <table class="table-auto text-gray-800 text-left rtl:text-right mb-10">
+    <table class="table-auto w-full text-gray-800 text-left rtl:text-right mb-10">
       <thead class="border-b-2 border-t">
         <tr>
           <th  class="px-6 py-3">#</th>
@@ -804,7 +715,7 @@ function dismissing(name){
       </tbody>
 </table>
   <p class=" font-extrabold">Striped rows:</p>
-<table class="table-auto text-gray-800 text-left rtl:text-right mb-10">
+<table class="table-auto w-full text-gray-800 text-left rtl:text-right mb-10">
       <thead class="border-b-2 border-t border-gray-300">
         <tr>
           <th  class="px-6 py-3">#</th>
@@ -835,7 +746,7 @@ function dismissing(name){
       </tbody>
 </table>
 
-<table class="table-auto text-gray-800 text-left rtl:text-right mb-10">
+<table class="table-auto w-full text-gray-800 text-left rtl:text-right mb-10">
       <thead class="border border-b-2">
         <tr>
           <th  class="px-6 py-3">#</th>
@@ -868,8 +779,8 @@ function dismissing(name){
 
 
     <!-- Footer -->
-    <hr class=" h-px bg-gray-600 my-5">
-    <div class="flex justify-between  pb-6">
+    <hr class=" h-px w-full bg-gray-600 my-5">
+    <div class="flex justify-between w-full pb-6">
       <p class=" text-gray-400">Copyright 2024 © DevCRUD Distribution ThemeWagon</p>
       <div class="flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512" fill="#6B7280"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512" fill="#6B7280"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
