@@ -4,14 +4,14 @@
 </script>
 
 <template>
-  <div id="#" class="h-screen items-center flex flex-col mt-[-350px] bg-gradient-to-b from-primary via-secondary to-transparent " >
+  <div id="#" class="h-screen items-center flex flex-col  bg-gradient-to-b from-primary via-secondary to-transparent " >
 
     <!-- Header -->
-    <div id="home" class="flex flex-col gap-8 text-start flex-wrap max-w-fit  font-Karla font-bold text-8xl text-gray-700" v-scroll="onScroll">
-      <h1 class="mt-[500px] text-gray-500">HI!</h1>
+    <div id="home" class="flex flex-col gap-8 text-start flex-wrap max-w-fit  font-Karla font-bold text-6xl xl:text-8xl text-gray-700" v-scroll="onScroll">
+      <h1 class="mt-[300px] text-gray-500">HI!</h1>
       <h1>I am Zaki</h1>
       <h1>Bousmaha</h1>
-      <div class="flex flex-col gap-2 text-4xl font-Karla font-extralight uppercase text-gray-500">
+      <div class="flex flex-col gap-2 text-3xl xl:text-4xl font-Karla font-extralight uppercase text-gray-500">
         <h2>Frontend Web</h2>
         <h2>Designer</h2>
       </div>
@@ -19,13 +19,13 @@
     </div>
     <!--       Hwo am i        -->
     <section id="about" class=" w-3/5">
-      <div  class="flex items-center mt-80 mb-40 ">
+      <div  class="flex flex-col xl:flex-row gap-8 items-center mt-80 mb-40 ">
         <img src="../assets/images/man.png" alt="">
       
-        <div class=" flex flex-col gap-4 text-lg font-thin font-Karla text-gray-500">
+        <div class=" flex flex-col items-center gap-4 text-lg font-thin font-Karla text-gray-500">
           <p>Who Am I ?</p>
-          <h3 class=" text-primary font-extrabold text-4xl mb-4">About Me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste
+          <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl mb-4">About Me</h3>
+          <p class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste
             culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!</p>
             <div class=" text-primary bg-transparent border-solid border-primary rounded-full border text-center max-w-fit p-2 px-4 hover:bg-primary hover:text-white">Download CV</div>
         </div>
@@ -33,30 +33,30 @@
     </section>
 
     <!--       What i do        -->
-    <div  class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
+    <div  class="flex flex-col gap-4 items-center justify-center font-thin font-Karla text-gray-500 w-5/6 ">
       <p>What I Do ?</p>
-      <h3 class=" text-primary font-extrabold text-4xl">Service</h3>
-      <div class="grid grid-cols-4 gap-6  mt-10">
+      <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl">Service</h3>
+      <div class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-6  mt-10">
         
-        <div class=" max-h-80 max-w-80 flex flex-col gap-6 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
+        <div class=" w-full max-h-80  flex flex-col gap-4 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
         group overflow-hidden">
          <img src="../assets/images/pencil-case.svg" class=" h-14 group-hover:scale-75  group-hover:-translate-y-10 transition duration-300"/>         
           <h4 class="group-hover:-translate-y-12 transition duration-300">Sapiente</h4>
           <p class=" mt-32 group-hover:-translate-y-44 transition duration-300 text-lg text-gray-700 font-extralight text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div class=" max-h-80 max-w-80 flex flex-col gap-6 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
+          <div class=" w-full max-h-80  flex flex-col gap-4 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
         group overflow-hidden">
          <img src="../assets/images/responsive.svg" class=" h-14 group-hover:scale-75  group-hover:-translate-y-10 transition duration-300"/>         
           <h4 class="group-hover:-translate-y-12 transition duration-300">Sapiente</h4>
           <p class=" mt-32 group-hover:-translate-y-44 transition duration-300 text-lg text-gray-700 font-extralight text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div class=" max-h-80 max-w-80 flex flex-col gap-6 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
+          <div class=" w-full max-h-80  flex flex-col gap-4 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
         group overflow-hidden">
          <img src="../assets/images/toolbox.svg" class=" h-14 group-hover:scale-75  group-hover:-translate-y-10 transition duration-300"/>         
           <h4 class="group-hover:-translate-y-12 transition duration-300">Sapiente</h4>
           <p class=" mt-32 group-hover:-translate-y-44 transition duration-300 text-lg text-gray-700 font-extralight text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
-          <div class=" max-h-80 max-w-80 flex flex-col gap-6 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
+          <div class=" w-full max-h-80  flex flex-col gap-4 items-center rounded-sm border  p-20 text-primary font-extrabold text-2xl 
         group overflow-hidden">
          <img src="../assets/images/analytics.svg" class=" h-14 group-hover:scale-75  group-hover:-translate-y-10 transition duration-300"/>         
           <h4 class="group-hover:-translate-y-12 transition duration-300">Sapiente</h4>
@@ -67,86 +67,90 @@
     </div>
 
     <!--       what i did        -->
-    <section id="portfolio">
-      <div  class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500  ">
+      <div id="portfolio" class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 md:w-4/6 lg:w-5/6">
         <p class=" mt-40">What I Did ?</p>
-        <h3 class=" text-primary font-extrabold text-4xl mb-20">Portfolio</h3>
-        <div class="grid grid-cols-3 gap-6 mb-80 min-h-96">
+        <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl mb-20">Portfolio</h3>
+        <div class=" w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-80 min-h-96">
       
-          <div class=" min-w-96 rounded-sm text-primary font-extrabold text-2xl
-          group overflow-hidden" style="background-image: url('src/assets/images/folio-1.jpg');">
-            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+          <div class="min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
+          group overflow-hidden bg-cover m-auto"
+          style="background-image: url('src/assets/images/folio-1.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
-              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+              <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
             </div>
             </div>
-            <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl
-          group overflow-hidden" style="background-image: url('src/assets/images/folio-2.jpg');">
-            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+            <div class="min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
+          group overflow-hidden bg-cover m-auto" style="background-image: url('src/assets/images/folio-2.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60  2xl:min-h-96 2xl:min-w-96 xl:min-h-80 xl:min-w-80 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
-              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+              <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
             </div>
             </div>
-            <div class="min-w-96 rounded-sm text-primary font-extrabold text-2xl
-          group overflow-hidden" style="background-image: url('src/assets/images/folio-3.jpg');">
-            <div class=" flex flex-col gap-2 justify-center items-center min-w-full min-h-full backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
+            <div class=" min-h-96 min-w-80  md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
+          group overflow-hidden bg-cover m-auto" style="background-image: url('src/assets/images/folio-3.jpg');">
+            <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80  2xl:min-h-96 2xl:min-w-96 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
-              <p class=" transition duration-300 text-lg text-black font-extralight text-center">Category: Web Templates</p>
+              <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
             </div>
             </div>
       
       
         </div>
       </div>
-    </section>
+    
 
 
     <!--       How Much I Charge ?        -->
     <div class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500  ">
       <p>How Much I Charge ?</p>
-      <h3 class=" text-primary font-extrabold text-4xl mb-20">My Pricing</h3>
-      <div class="grid grid-cols-3 mb-80 min-h-96 max-h-fit">
+      <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl mb-20">My Pricing</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-0 gap-6 mb-80 min-h-fit">
         
-        <div class=" min-w-96 text-primary font-extrabold text-4xl 
+        <div class=" min-w-96 md:min-w-40 lg:min-w-80 text-primary font-extrabold text-3xl lg:text-4xl 
         group overflow-hidden border p-6 hover:-translate-y-2 duration-200">         
           <div class=" flex flex-col gap-6 justify-center items-center min-w-full min-h-full  group-hover:scale-100 transition duration-200">
-            <img src="../assets/images/scooter.svg" class=" h-20" alt="">
+            <img src="../assets/images/scooter.svg" class=" h-16 lg:h-20" alt="">
             <h4 class="">Free</h4>
-            <div class="flex flex-col gap-6 text-lg text-gray-400 font-extralight text-center">
+            <div class="flex flex-col gap-4 text-base text-gray-400 font-extralight text-center">
               <p >accusamus reprehenderit</p>
               <p >provident dolorem</p>
               <p >quos neque</p>
               <p >fugiat quibusdam</p>
+              <h4 class=" font-extralight text-xl text-red-400">X</h4>
+              <h4 class=" font-extralight text-xl text-red-400">X</h4>
             </div>
-            <h4 class=" font-extralight text-2xl text-red-400">X</h4>
-            <h4 class=" font-extralight text-2xl text-red-400">X</h4>
-            <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>0.00/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
+           
+            <h1 class=" text-3xl font-light text-gray-700"><span class=" text-4xl ">$</span>0.00/Month</h1>
+            <div class=" bg-primary text-white p-2 text-base font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
+         
+          
           </div>
-          <div class=" min-w-96 text-primary font-extrabold text-4xl 
+          <div class="  text-primary font-extrabold text-3xl lg:text-4xl 
         group overflow-hidden border p-6 hover:-translate-y-2 duration-200">         
-          <div class=" flex flex-col gap-6 justify-center items-center min-w-full min-h-full  group-hover:scale-100 transition duration-200">
-            <img src="../assets/images/shipped.svg" class=" h-20" alt="">
+        <div class=" flex flex-col gap-6 justify-center items-center min-w-full min-h-full  group-hover:scale-100 transition duration-200">
+            <img src="../assets/images/shipped.svg" class=" h-16 lg:h-20" alt="">
             <h4 class="">Basic</h4>
-            <div class="flex flex-col gap-6 text-lg text-gray-400 font-extralight text-center">
+            <div class="flex flex-col gap-4 text-base text-gray-400 font-extralight text-center">
               <p >accusamus reprehenderit</p>
               <p >provident dolorem</p>
               <p >quos neque</p>
               <p >fugiat quibusdam</p>
               <p >accusamus laboriosam</p>
+              <h4 class=" font-extralight text-xl text-red-400">X</h4>
             </div>
-            <h4 class=" font-extralight text-2xl text-red-400">X</h4>
-            <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>9.99/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
+           
+            <h1 class=" text-3xl font-light text-gray-700"><span class=" text-4xl ">$</span>9.99/Month</h1>
+            <div class=" bg-primary text-white p-2 text-base font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
           </div>
-          <div class=" min-w-96 text-primary font-extrabold text-4xl 
+          <div class=" text-primary font-extrabold text-3xl lg:text-4xl 
         group overflow-hidden border p-6 hover:-translate-y-2 duration-200">         
-          <div class=" flex flex-col gap-6 justify-center items-center min-w-full min-h-full  group-hover:scale-100 transition duration-200">
-            <img src="../assets/images/startup.svg" class=" h-20" alt="">
+        <div class=" flex flex-col gap-6 justify-center items-center min-w-full min-h-full  group-hover:scale-100 transition duration-200">
+            <img src="../assets/images/startup.svg" class=" h-16 lg:h-20" alt="">
             <h4 class="">Premium</h4>
-            <div class="flex flex-col gap-6 text-lg text-gray-400 font-extralight text-center">
+            <div class="flex flex-col gap-4 text-base text-gray-400 font-extralight text-center">
               <p >accusamus reprehenderit</p>
               <p >provident dolorem</p>
               <p >quos neque</p>
@@ -154,42 +158,43 @@
               <p>accusamus laboriosam</p>
               <p>inventore omnis</p>
             </div>
-            <h1 class=" text-5xl font-light text-gray-700"><span class=" text-4xl ">$</span>99.9/Month</h1>
-            <div class=" bg-primary text-white p-2 text-lg font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
+           
+            <h1 class=" text-3xl font-light text-gray-700"><span class=" text-4xl ">$</span>99.9/Month</h1>
+            <div class=" bg-primary text-white p-2 text-base font-extralight cursor-pointer hover:bg-hoverd">Subscribe</div>
           </div>
-          </div>  
+          </div> 
       </div>
     </div>
 
     <!--      Want to work with me?        -->
     <div class=" flex justify-evenly items-center w-full bg-primary text-white py-20">
       <div class="flex flex-col gap-2">
-        <h4 class=" text-3xl font-bold font-Karla">Want to work with me?</h4>
-        <p class=" text-xl font-extralight">Always feel Free to Contact & Hire me</p>
+        <h4 class=" text-xl md:text-2xl lg:text-3xl font-bold font-Karla">Want to work with me?</h4>
+        <p class=" text-base md:text-lg lg:text-xl font-extralight">Always feel Free to Contact & Hire me</p>
       </div>
-      <div class=" bg-white cursor-pointer text-black font-Karla rounded-sm px-4 p-2 font-bold text-xl hover:bg-gray-100">Hire Me</div>
+      <div class=" bg-white cursor-pointer text-black font-Karla rounded-sm px-4 p-2 font-bold text-base md:text-lg lg:text-xl hover:bg-gray-100">Hire Me</div>
     </div>
 
      <!--       What Think Client About Me ?        -->
-     <div id="testomanial" class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 ">
+     <div id="testomanial" class="flex flex-col gap-4 items-center font-thin font-Karla text-gray-500 w-5/6">
       <p class=" mt-40">What Think Client About Me ?</p>
-      <h3 class=" text-primary font-extrabold text-4xl">Testmonial</h3>
-      <div class="grid grid-cols-2 mx-80 gap-20  mt-10">
+      <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl">Testmonial</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20  mt-10">
         
-        <div class=" max-h-60  flex gap-6 py-6 items-center rounded-sm border  p-2 text-primary font-extrabold text-xl 
+        <div class=" max-h-60  flex gap-6 py-6 items-center rounded-sm border  p-2 text-primary font-extrabold text-lg lg:text-xl
         ">
          <img src="../assets/images/avatar2.jpg" class=" h-20 rounded-full ml-[-50px]"/>         
           <div class="flex flex-col gap-4">
-            <p class="text-lg text-gray-400 font-extralight text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+            <p class="text-base  text-gray-400 font-extralight text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
             <h4 >Emily Reb</h4>
             
           </div>
           </div>
-          <div class=" max-h-60  flex gap-6 py-6 items-center rounded-sm border  p-2 text-primary font-extrabold text-xl 
+          <div class=" max-h-60  flex gap-6 py-6 items-center rounded-sm border  p-2 text-primary font-extrabold text-lg lg:text-xl 
         ">
          <img src="../assets/images/avatar3.jpg" class=" h-20 rounded-full ml-[-50px]"/>         
           <div class="flex flex-col gap-4">
-            <p class="text-lg text-gray-400 font-extralight text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+            <p class="text-base text-gray-400 font-extralight text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
             <h4 >Emily Reb</h4>
             
           </div>
@@ -200,15 +205,16 @@
     </div>
 
     <!--       Recent Posts?       -->
-    <div id="blog" class="flex flex-col gap-4 items-center font-extralight font-Karla text-gray-700 ">
+    <div id="blog" class="flex flex-col gap-4 items-center font-extralight font-Karla text-gray-700 w-5/6">
       <p class="mt-40">Recent Posts?</p>
-      <h3 class=" text-primary font-extrabold text-4xl">Blog</h3>
-      <div class="grid grid-rows-2 mx-96 gap-20 mb-40 mt-10">
+      <h3 class=" text-primary font-extrabold text-3xl lg:text-4xl">Blog</h3>
+      <div class="grid grid-rows-2 gap-20 mb-40 mt-10">
         
-        <div class=" max-h-96  flex  gap-6 items-center rounded-sm border  text-primary font-extrabold text-xl overflow-hidden
+        <div class=" h-fit lg:max-h-96 flex flex-col lg:flex-row  gap-6 items-center rounded-sm border  text-primary font-extrabold text-xl overflow-hidden
         " >
-        <img src="../assets/images/img-1.jpg" class=" h-96 w-96 "/>
-          <div class="flex flex-col gap-4">
+        <img src="../assets/images/img-1.jpg" class="w-full h-1/2 lg:h-96 
+       lg:w-2/5"/>
+          <div class="flex flex-col gap-2 p-6">
             <h4 >Consectetur adipisicing elit</h4>
             <div class="flex gap-4 text-base font-normal text-gray-400">
               <p>By: Admin</p>
@@ -238,10 +244,11 @@
             
           </div>
           </div>
-          <div class=" max-h-96  flex gap-6  items-center rounded-sm border   text-primary font-extrabold text-xl overflow-hidden
+          <div class=" h-fit lg:max-h-96 flex flex-col lg:flex-row gap-6  items-center rounded-sm border   text-primary font-extrabold text-xl overflow-hidden
         ">
-         <img src="../assets/images/img-2.jpg" class=" h-96 w-96"/>         
-         <div class="flex flex-col gap-4">
+         <img src="../assets/images/img-2.jpg" class="w-full h-1/2 lg:h-96 
+         lg:w-2/5"/>         
+         <div class="flex flex-col gap-4 p-6">
             <h4 >Consectetur adipisicing elit</h4>
             <div class="flex gap-4 text-base font-normal text-gray-400">
               <p>By: Admin</p>
@@ -276,14 +283,14 @@
       </div>
     </div>
     <!--       How can you communicat       -->
-    <div id="contact" class="flex flex-col gap-4 items-center font-Karla font-extralight text-gray-700 w-1/2 mx-auto ">
+    <div id="contact" class="flex flex-col gap-4 items-center font-Karla font-extralight text-gray-700 w-1/2 mx-auto  text-center">
       <div class="flex flex-col gap-1 items-center mb-10">
         <p>How can you communicat?</p>
-        <h4 class="text-primary font-extrabold text-4xl">Contact Me</h4>
+        <h4 class="text-primary font-extrabold text-3xl lg:text-4xl">Contact Me</h4>
       </div>
-      <div class="flex min-w-full justify-center gap-4">
-        <input type="text" placeholder="Your Name" class=" rounded border border-solid border-gray-400 bg-transparent w-1/2 p-2 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
-        <input type="email" placeholder="Enter Email" class=" rounded border border-solid border-gray-400 bg-transparent w-1/2 p-2 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
+      <div class="flex flex-col md:flex-row min-w-full justify-center gap-4">
+        <input type="text" placeholder="Your Name" class=" rounded border border-solid border-gray-400 bg-transparent w-full md:w-1/2 p-2 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
+        <input type="email" placeholder="Enter Email" class=" rounded border border-solid border-gray-400 bg-transparent w-full md:w-1/2 p-2 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
       </div>
       <textarea name="message" placeholder="Write Somthing" class="rounded border border-solid border-gray-400 bg-transparent w-full p-2 h-40 focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"/>
       <div class="border border-solid border-primary text-primary font-extralight rounded bg-transparent hover:bg-primary hover:text-white p-2 mt-5 mb-32 cursor-pointer">Send Message</div>
