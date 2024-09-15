@@ -1,5 +1,7 @@
 <script setup>
-
+import folioImage1 from '@/assets/images/folio-1.jpg';
+import folioImage2 from '@/assets/images/folio-2.jpg';
+import folioImage3 from '@/assets/images/folio-3.jpg';
 
 </script>
 
@@ -74,7 +76,7 @@
       
           <div class="min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
           group overflow-hidden bg-cover m-auto"
-          :style="{ backgroundImage: `url(${require('@/assets/images/folio-1.jpg')})` }">
+          :style="{ backgroundImage: `url(${folioImage1})` }">
             <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
               <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
@@ -83,14 +85,14 @@
             <div class="min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
           group overflow-hidden bg-cover m-auto" 
           
-           :style="{ backgroundImage: `url(${require('@/assets/images/folio-2.jpg')})` }">
+          :style="{ backgroundImage: `url(${folioImage2})` }">
             <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60  2xl:min-h-96 2xl:min-w-96 xl:min-h-80 xl:min-w-80 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
               <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
             </div>
             </div>
             <div class=" min-h-96 min-w-80  md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80 2xl:min-h-96 2xl:min-w-96 rounded-sm text-primary font-extrabold text-2xl md:text-lg lg:text-2xl
-          group overflow-hidden bg-cover m-auto" :style="{ backgroundImage: `url(${require('@/assets/images/folio-3.jpg')})` }">
+          group overflow-hidden bg-cover m-auto" :style="{ backgroundImage: `url(${folioImage3})` }">
             <div class=" flex flex-col gap-2 justify-center items-center min-h-96 min-w-80 md:min-h-40 md:min-w-40 lg:min-h-60 lg:min-w-60 xl:min-h-80 xl:min-w-80  2xl:min-h-96 2xl:min-w-96 backdrop-blur-sm bg-white/10 scale-0 group-hover:scale-100 transition duration-200">
               <h4 class="">Web Designing</h4>
               <p class=" transition duration-300 text-lg md:text-xs lg:text-lg text-black font-extralight text-center">Category: Web Templates</p>
